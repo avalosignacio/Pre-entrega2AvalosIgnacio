@@ -1,0 +1,75 @@
+*{
+margin: 0;
+padding: 0;
+
+}
+
+#grilla{
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas:"header"
+                        "nav"
+                        "main"
+                        "footer";
+    grid-template-rows: 228px 30px 700px 100px;
+}
+
+header{
+    
+    grid-area: header;
+    height: 78%;
+}
+
+#banner{
+        display: flex;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        max-height: 200px;
+        
+
+}
+#text_banner{
+        grid-area: text;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+        background-color:rgb(19, 18, 18);
+        color: white;
+}
+
+nav{
+    grid-area: nav;
+    background-color: blueviolet;
+    
+
+}
+
+ul{
+
+    display:flex;
+    width: 100%;
+    
+    
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: large;
+    list-style: none;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+main{
+
+    background-color: brown;
+}
+
+footer{
+
+    background-color: rgb(115, 207, 115);
+}
